@@ -28,9 +28,10 @@ def msgHandler[F[_]: Console]: Behaviour[F, Command].receive { (context, message
 }
 
 val program = for {
-  actorSystem <- ActorSystem[IO, Command](msgHandler, "system")
+  actorSystem <- ActorSystem[IO, Command](Behaviour.empty, "system")
   pinger <- actorSystem.spawn[Command](msgHandler, "pinger")
   ponger <- actorSystem.spawn[Command](msgHandler, "ponger")
+  pinger ! Ping(ponger)
   _ <- actorSystem.cancel
 } yield ()
 
