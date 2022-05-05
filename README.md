@@ -4,6 +4,38 @@ This project aims to implement actors from the actor model using pure functional
 
 The interface for creating and interacting with actors is heavily inspired by Akka actors, particularly with `Behaviours` being used as the main way to define message handling functionality.
 
+## Example
+
+```scala
+sealed trait Command
+case class Ping[F[_]](sender: ActorRef[F, Command]) extends Command
+case object Pong extends Command
+
+def msgHandler[F[_]: Console]: Behaviour[F, Command].receive { (context, message) =>
+  message match {
+    case Pong =>
+      for {
+        _ <- Console[F].println("Pong")
+      } yield ()
+    case Ping(sender) =>
+      for {
+        _ <- Console[F].println("Ping")
+        self <- context.self
+        _ <- sender ! Pong(self)
+      } yield ()
+  }
+  msgHandler
+}
+
+val program = for {
+  actorSystem <- ActorSystem[IO, Command](msgHandler, "system")
+  pinger <- actorSystem.spawn[Command](msgHandler, "pinger")
+  ponger <- actorSystem.spawn[Command](msgHandler, "ponger")
+  _ <- actorSystem.cancel
+} yield ()
+
+```
+
 ## TODO
 
 1. Implement the ask pattern found in Akka.
