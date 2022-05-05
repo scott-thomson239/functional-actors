@@ -7,7 +7,7 @@ import cats.data._
 import cats.implicits._
 import cats.effect.implicits._
 
-trait ActorRefAlgebra[F[_], T] {
+trait ActorRef[F[_], T] {
 
   def tell(msg: T): F[Unit]
 
@@ -16,7 +16,7 @@ trait ActorRefAlgebra[F[_], T] {
   def cancel: F[Unit]
 }
 
-class ActorRef[F[_]: Monad, T](actor: Actor[F, T], removeFromActorMap: () => F[Unit]) extends ActorRefAlgebra[F, T] {
+class ActorRefImpl[F[_]: Monad, T](actor: Actor[F, T], removeFromActorMap: () => F[Unit]) extends ActorRef[F, T] {
 
   def tell(msg: T): F[Unit] = actor.tell(msg)
 
@@ -31,6 +31,6 @@ class ActorRef[F[_]: Monad, T](actor: Actor[F, T], removeFromActorMap: () => F[U
 object ActorRef {
 
   def apply[F[_]: Monad, T](actor: Actor[F, T], removeFromActorMap: () => F[Unit]): F[ActorRef[F, T]] =
-    Applicative[F].pure(new ActorRef(actor, removeFromActorMap))
+    Applicative[F].pure(new ActorRefImpl(actor, removeFromActorMap))
 
 }

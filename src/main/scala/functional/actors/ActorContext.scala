@@ -7,7 +7,7 @@ import cats.data._
 import cats.implicits._
 import cats.effect.implicits._
 
-trait ActorContextAlgebra[F[_], T] {
+trait ActorContext[F[_], T] {
 
   def self: F[ActorRef[F, T]]
 
@@ -19,7 +19,7 @@ trait ActorContextAlgebra[F[_], T] {
 
 }
 
-class ActorContext[F[_]: Concurrent, T](path: String, actorSystem: ActorSystem[F, _], childrenList: Ref[F, List[ActorRef[F, Nothing]]]) extends ActorContextAlgebra[F, T] {
+class ActorContextImpl[F[_]: Concurrent, T](path: String, actorSystem: ActorSystem[F, _], childrenList: Ref[F, List[ActorRef[F, Nothing]]]) extends ActorContext[F, T] {
 
   def self: F[ActorRef[F, T]] = actorSystem.search(path)
 
@@ -35,5 +35,5 @@ object ActorContext {
 
   def apply[F[_]: Concurrent, T](path: String, actorSystem: ActorSystem[F, _]): F[ActorContext[F, T]] = for {
     childSet <- Ref.of[F, List[ActorRef[F, Nothing]]](List.empty)
-  } yield new ActorContext(path, actorSystem, childSet)
+  } yield new ActorContextImpl(path, actorSystem, childSet)
 }

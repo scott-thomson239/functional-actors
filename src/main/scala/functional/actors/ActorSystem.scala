@@ -7,7 +7,7 @@ import cats.data._
 import cats.implicits._
 import cats.effect.implicits._
 
-trait ActorSystemAlgebra[F[_], T] extends ActorRefAlgebra[F, T] {
+trait ActorSystem[F[_], T] extends ActorRef[F, T] {
 
   def spawn[U](behaviour: Behaviour[F, U], name: String): F[ActorRef[F, U]]
 
@@ -15,10 +15,10 @@ trait ActorSystemAlgebra[F[_], T] extends ActorRefAlgebra[F, T] {
 
 }
 
-class ActorSystem[F[_]: Async, T](rootBehaviour: Behaviour[F, T], name: String, actorRefMap: Ref[F, Map[String, ActorRef[F, Any]]]) extends ActorSystemAlgebra[F, T] {
+class ActorSystemImpl[F[_]: Async, T](rootBehaviour: Behaviour[F, T], name: String, actorRefMap: Ref[F, Map[String, ActorRef[F, Any]]]) extends ActorSystem[F, T] {
 
   val rootActor: F[ActorRef[F, T]] = for {
-    actorContext <- ActorContext(name, this)
+    actorContext <- ActorContext[F, T](name, this)
     rootActor <- Actor(actorContext, rootBehaviour)
     rootActorRef <- ActorRef(rootActor, removeFromActorMap(name))
     _ <- actorRefMap.update(_ + (name -> rootActorRef.asInstanceOf[ActorRef[F, Any]]))
@@ -34,7 +34,7 @@ class ActorSystem[F[_]: Async, T](rootBehaviour: Behaviour[F, T], name: String, 
     map <- actorRefMap.get
     _ <- if (map.contains(path)) Async[F].raiseError(new Exception(s"Actor $path already exists")) else Async[F].unit
     childPath <- Applicative[F].pure(path)
-    childContext <- ActorContext(childPath, this)
+    childContext <- ActorContext[F, U](childPath, this)
     childActor <- Actor(childContext, behaviour)
     actorRef <- ActorRef(childActor, removeFromActorMap(childPath))
     _ <- actorRefMap.update(_ + (path -> actorRef.asInstanceOf[ActorRef[F, Any]]))
@@ -52,9 +52,9 @@ class ActorSystem[F[_]: Async, T](rootBehaviour: Behaviour[F, T], name: String, 
 
 object ActorSystem {
 
-  def apply[F[_]: Async, T](rootBehaviour: Behaviour[F, T], name: String): F[ActorSystem[F[_], T]] = for {
+  def apply[F[_]: Async, T](rootBehaviour: Behaviour[F, T], name: String): F[ActorSystem[F, T]] = for {
     actorRefMap <- Ref[F].of[Map[String, ActorRef[F, Any]]](Map.empty)
-    actorSystem <- Sync[F].delay(new ActorSystem(rootBehaviour, name, actorRefMap))
+    actorSystem <- Sync[F].delay(new ActorSystemImpl(rootBehaviour, name, actorRefMap))
   } yield actorSystem
 
 }

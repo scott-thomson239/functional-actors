@@ -21,4 +21,7 @@ object Behaviour {
   def receiveMessage[F[_]: Sync, T](f: T => Behaviour[F, T]): Behaviour[F, T] =
     (_, message: T) => Sync[F].delay(f(message))
 
+  def empty[F[_]: Sync, T]: Behaviour[F, T] =
+    (_, message: T) => Sync[F].delay {empty}
+
 }
