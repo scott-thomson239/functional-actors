@@ -402,3 +402,377 @@ WARNING: Unmatched cancel notification for request id 1822
 2022.05.05 01:33:14 INFO  shutting down Metals
 2022.05.05 01:33:14 INFO  Shut down connection with build server.
 2022.05.05 01:33:14 INFO  Shut down connection with build server.
+2022.05.05 02:39:38 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\scott\Documents\functional-actors\.metals\lsp.trace.json or C:\Users\scott\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.05.05 02:39:39 INFO  logging to file C:\Users\scott\Documents\functional-actors\.metals\metals.log
+2022.05.05 02:39:39 INFO  Started: Metals version 0.11.5 in workspace 'C:\Users\scott\Documents\functional-actors' for client Visual Studio Code 1.66.2.
+2022.05.05 02:39:40 INFO  time: initialize in 1.49s
+2022.05.05 02:39:41 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.05.05 02:39:41 INFO  Attempting to connect to the build server...
+2022.05.05 02:39:40 INFO  skipping build import with status 'Installed'
+2022.05.05 02:39:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\scott\Documents\functional-actors\.metals\bsp.trace.json or C:\Users\scott\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2022.05.05 02:39:41 INFO  Attempting to connect to the build server...
+2022.05.05 02:39:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\scott\Documents\functional-actors\project\.metals\bsp.trace.json or C:\Users\scott\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2022.05.05 02:39:41 INFO  time: Connected to build server in 0.17s
+2022.05.05 02:39:41 INFO  Connected to Build server: Bloop v1.5.0
+May 05, 2022 2:39:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2022.05.05 02:39:43 INFO  time: indexed workspace in 2.14s
+2022.05.05 02:39:43 INFO  compiling functional-actors (1 scala source)
+2022.05.05 02:39:44 INFO  time: compiled functional-actors in 1.01s
+2022.05.05 02:39:45 INFO  compiling functional-actors (1 scala source)
+2022.05.05 02:39:45 INFO  time: compiled functional-actors in 68ms
+2022.05.05 02:39:56 INFO  compiling functional-actors (1 scala source)
+2022.05.05 02:39:56 INFO  time: compiled functional-actors in 39ms
+2022.05.05 02:40:19 ERROR code navigation does not work for the file 'C:\Users\scott\Documents\functional-actors\src\main\scala\functional\actors\mbmbm.scala' because the SemanticDB file 'C:\Users\scott\Documents\functional-actors\.bloop\functional-actors\bloop-bsp-clients-classes\classes-Metals-aMb-0NTxTCKLDl1wnVyIPg==\META-INF\semanticdb\src\main\scala\functional\actors\mbmbm.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+2022.05.05 02:41:00 INFO  shutting down Metals
+2022.05.05 02:41:00 INFO  Shut down connection with build server.
+2022.05.05 02:41:00 INFO  Shut down connection with build server.
+2022.05.09 21:29:25 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\scott\Documents\functional-actors\.metals\lsp.trace.json or C:\Users\scott\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.05.09 21:29:26 INFO  logging to file C:\Users\scott\Documents\functional-actors\.metals\metals.log
+2022.05.09 21:29:26 INFO  Started: Metals version 0.11.5 in workspace 'C:\Users\scott\Documents\functional-actors' for client Visual Studio Code 1.67.0.
+2022.05.09 21:29:27 INFO  time: initialize in 1.3s
+2022.05.09 21:29:27 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.
+2022.05.09 21:29:28 INFO  Attempting to connect to the build server...
+2022.05.09 21:29:27 INFO  skipping build import with status 'Installed'
+2022.05.09 21:29:31 INFO  no build target found for C:\Users\scott\Documents\functional-actors\src\main\scala\functional\actors\mbmbm.scala. Using presentation compiler with project's scala-library version: 3.1.2
+2022.05.09 21:29:33 INFO  time: code lens generation in 1.58s
+2022.05.09 21:29:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\scott\Documents\functional-actors\.metals\bsp.trace.json or C:\Users\scott\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2022.05.09 21:29:33 INFO  Attempting to connect to the build server...
+2022.05.09 21:29:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\scott\Documents\functional-actors\project\.metals\bsp.trace.json or C:\Users\scott\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2022.05.09 21:29:33 INFO  time: Connected to build server in 5.37s
+2022.05.09 21:29:33 INFO  Connected to Build server: Bloop v1.5.0
+2022.05.09 21:29:35 INFO  time: indexed workspace in 1.82s
+2022.05.09 21:29:35 INFO  compiling functional-actors (1 scala source)
+2022.05.09 21:29:37 INFO  time: compiled functional-actors in 1.13s
+2022.05.09 21:29:39 INFO  compiling functional-actors (1 scala source)
+2022.05.09 21:29:39 INFO  time: compiled functional-actors in 86ms
+2022.05.09 21:29:54 INFO  compiling functional-actors (1 scala source)
+2022.05.09 21:29:54 INFO  time: compiled functional-actors in 56ms
+2022.05.09 21:29:57 INFO  compiling functional-actors (1 scala source)
+2022.05.09 21:29:57 INFO  time: compiled functional-actors in 54ms
+May 09, 2022 9:30:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 35 is not a valid line number, allowed [0..18]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 16 more
+
+2022.05.09 21:30:01 INFO  compiling functional-actors (1 scala source)
+2022.05.09 21:30:01 INFO  time: compiled functional-actors in 66ms
+May 09, 2022 9:30:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 35 is not a valid line number, allowed [0..18]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 16 more
+
+2022.05.09 21:30:03 INFO  compiling functional-actors (1 scala source)
+2022.05.09 21:30:03 INFO  time: compiled functional-actors in 53ms
+May 09, 2022 9:30:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: 35 is not a valid line number, allowed [0..18]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.PatternMatchRefactor.contribute(PatternMatchRefactor.scala:96)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:64)
+	at scala.meta.internal.metals.CodeActionProvider$$anonfun$1.applyOrElse(CodeActionProvider.scala:63)
+	at scala.collection.immutable.List.collect(List.scala:275)
+	at scala.meta.internal.metals.CodeActionProvider.codeActions(CodeActionProvider.scala:63)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeAction$1(MetalsLanguageServer.scala:1639)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLanguageServer.codeAction(MetalsLanguageServer.scala:1638)
+	... 16 more
+
+May 09, 2022 9:30:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: 30 is not a valid line number, allowed [0..18]
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: 30 is not a valid line number, allowed [0..18]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: 30 is not a valid line number, allowed [0..18]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:37)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:32)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.inputs.Position$Range$.apply(Position.scala:59)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionPositionLspInverse.toMeta(MtagsEnrichments.scala:179)
+	at scala.meta.internal.parsing.Trees.$anonfun$findLastEnclosingAt$4(Trees.scala:76)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.Trees.findLastEnclosingAt(Trees.scala:75)
+	at scala.meta.internal.metals.codeactions.InsertInferredType.$anonfun$contribute$1(InsertInferredType.scala:66)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2022.05.09 21:30:44 INFO  compiling functional-actors (1 scala source)
+2022.05.09 21:30:44 INFO  time: compiled functional-actors in 0.66s
+2022.05.09 21:30:53 INFO  compiling functional-actors (1 scala source)
+2022.05.09 21:30:53 INFO  time: compiled functional-actors in 42ms
+2022.05.09 21:30:55 INFO  compiling functional-actors (1 scala source)
+2022.05.09 21:30:55 INFO  time: compiled functional-actors in 45ms
+2022.05.09 21:31:25 INFO  compiling functional-actors (1 scala source)
+2022.05.09 21:31:25 INFO  time: compiled functional-actors in 0.26s
+2022.05.09 21:31:30 INFO  compiling functional-actors (1 scala source)
+2022.05.09 21:31:30 INFO  time: compiled functional-actors in 0.23s
+2022.05.09 21:31:47 INFO  compiling functional-actors (1 scala source)
+2022.05.09 21:31:47 INFO  time: compiled functional-actors in 0.2s
+2022.05.09 21:31:53 INFO  compiling functional-actors (1 scala source)
+2022.05.09 21:31:53 INFO  time: compiled functional-actors in 0.21s
+2022.05.09 21:32:34 INFO  compiling functional-actors (1 scala source)
+2022.05.09 21:32:34 INFO  time: compiled functional-actors in 0.26s
+2022.05.09 22:01:47 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:01:47 INFO  time: compiled functional-actors in 0.18s
+2022.05.09 22:01:52 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:01:52 INFO  time: compiled functional-actors in 0.18s
+2022.05.09 22:06:00 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:06:00 INFO  time: compiled functional-actors in 0.24s
+2022.05.09 22:06:06 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:06:06 INFO  time: compiled functional-actors in 0.16s
+2022.05.09 22:07:03 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:07:03 INFO  time: compiled functional-actors in 0.18s
+2022.05.09 22:07:08 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:07:08 INFO  time: compiled functional-actors in 0.15s
+2022.05.09 22:07:17 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:07:17 INFO  time: compiled functional-actors in 0.75s
+2022.05.09 22:07:25 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:07:27 INFO  time: compiled functional-actors in 1.2s
+2022.05.09 22:07:33 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:07:33 INFO  time: compiled functional-actors in 42ms
+2022.05.09 22:07:36 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:07:36 INFO  time: compiled functional-actors in 41ms
+2022.05.09 22:07:39 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:07:39 INFO  time: compiled functional-actors in 44ms
+2022.05.09 22:07:41 INFO  file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala:29:9: stale bloop error: illegal start of simple pattern
+        } yield()
+        ^
+2022.05.09 22:07:41 INFO  file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala:29:9: stale bloop error: illegal start of simple pattern
+        } yield()
+        ^
+2022.05.09 22:07:41 INFO  file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala:29:9: stale bloop error: illegal start of simple pattern
+        } yield()
+        ^
+2022.05.09 22:07:41 INFO  file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala:29:9: stale bloop error: illegal start of simple pattern
+        } yield()
+        ^
+2022.05.09 22:07:43 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:07:43 INFO  time: compiled functional-actors in 49ms
+2022.05.09 22:07:50 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:07:50 INFO  time: compiled functional-actors in 0.73s
+2022.05.09 22:07:59 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:07:59 INFO  time: compiled functional-actors in 0.18s
+2022.05.09 22:07:59 WARN  Could not load snapshot text for C:\Users\scott\Documents\functional-actors\src\main\scala\functional\actors\mbmbm.scala
+2022.05.09 22:08:01 WARN  Could not load snapshot text for C:\Users\scott\Documents\functional-actors\src\main\scala\functional\actors\mbmbm.scala
+2022.05.09 22:08:06 WARN  Could not load snapshot text for C:\Users\scott\Documents\functional-actors\src\main\scala\functional\actors\mbmbm.scala
+2022.05.09 22:08:07 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:08:07 INFO  time: compiled functional-actors in 0.16s
+2022.05.09 22:08:07 WARN  Could not load snapshot text for C:\Users\scott\Documents\functional-actors\src\main\scala\functional\actors\mbmbm.scala
+2022.05.09 22:08:10 WARN  Could not load snapshot text for C:\Users\scott\Documents\functional-actors\src\main\scala\functional\actors\mbmbm.scala
+2022.05.09 22:08:36 WARN  Could not load snapshot text for C:\Users\scott\Documents\functional-actors\src\main\scala\functional\actors\mbmbm.scala
+2022.05.09 22:08:42 WARN  Could not load snapshot text for C:\Users\scott\Documents\functional-actors\src\main\scala\functional\actors\mbmbm.scala
+2022.05.09 22:08:43 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:08:43 WARN  Could not load snapshot text for C:\Users\scott\Documents\functional-actors\src\main\scala\functional\actors\mbmbm.scala
+2022.05.09 22:08:43 INFO  time: compiled functional-actors in 0.65s
+2022.05.09 22:08:47 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:08:47 INFO  time: compiled functional-actors in 0.16s
+2022.05.09 22:08:50 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:08:50 INFO  time: compiled functional-actors in 43ms
+2022.05.09 22:08:52 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:08:52 INFO  time: compiled functional-actors in 0.15s
+2022.05.09 22:08:55 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:08:55 INFO  time: compiled functional-actors in 0.15s
+2022.05.09 22:09:08 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:09:08 INFO  time: compiled functional-actors in 0.15s
+2022.05.09 22:09:26 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:09:26 INFO  time: compiled functional-actors in 0.15s
+2022.05.09 22:09:45 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:09:45 INFO  time: compiled functional-actors in 0.14s
+2022.05.09 22:09:48 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:09:48 INFO  time: compiled functional-actors in 42ms
+2022.05.09 22:09:52 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:09:52 INFO  time: compiled functional-actors in 0.15s
+2022.05.09 22:09:58 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:09:58 INFO  time: compiled functional-actors in 0.14s
+2022.05.09 22:11:43 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:11:43 INFO  time: compiled functional-actors in 0.24s
+2022.05.09 22:11:47 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:11:47 INFO  time: compiled functional-actors in 39ms
+2022.05.09 22:11:49 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:11:49 INFO  time: compiled functional-actors in 0.15s
+2022.05.09 22:11:55 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:11:55 INFO  time: compiled functional-actors in 0.14s
+something's wrong: no file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala in <error>RangePosition(file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala, 689, 698, 840)
+something's wrong: no file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala in <error>RangePosition(file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala, 689, 698, 840)
+2022.05.09 22:12:33 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:12:33 INFO  time: compiled functional-actors in 0.14s
+2022.05.09 22:12:43 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:12:43 INFO  time: compiled functional-actors in 0.14s
+something's wrong: no file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala in <error>RangePosition(file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala, 689, 698, 840)
+something's wrong: no file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala in <error>RangePosition(file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala, 689, 698, 840)
+2022.05.09 22:13:00 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:13:00 INFO  time: compiled functional-actors in 38ms
+2022.05.09 22:13:03 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:13:03 INFO  time: compiled functional-actors in 0.15s
+2022.05.09 22:13:13 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:13:13 INFO  time: compiled functional-actors in 0.14s
+May 09, 2022 10:15:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1038
+2022.05.09 22:15:48 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:15:48 INFO  time: compiled functional-actors in 39ms
+2022.05.09 22:15:51 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:15:51 INFO  time: compiled functional-actors in 0.14s
+2022.05.09 22:17:01 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:17:01 INFO  time: compiled functional-actors in 37ms
+2022.05.09 22:17:11 INFO  file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala:18:3: stale bloop error: '<-' expected but '}' found.
+  } yield ExitCode.Success
+  ^
+2022.05.09 22:17:11 INFO  file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala:18:3: stale bloop error: '<-' expected but '}' found.
+  } yield ExitCode.Success
+  ^
+2022.05.09 22:17:13 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:17:13 INFO  time: compiled functional-actors in 0.14s
+2022.05.09 22:17:17 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:17:17 INFO  time: compiled functional-actors in 0.14s
+2022.05.09 22:17:20 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:17:20 INFO  time: compiled functional-actors in 0.14s
+2022.05.09 22:21:46 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:21:46 INFO  time: compiled functional-actors in 0.15s
+2022.05.09 22:21:48 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:21:48 INFO  time: compiled functional-actors in 0.14s
+2022.05.09 22:22:16 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:22:16 INFO  time: compiled functional-actors in 0.14s
+2022.05.09 22:22:18 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:22:18 INFO  time: compiled functional-actors in 0.15s
+2022.05.09 22:26:26 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:26:26 INFO  time: compiled functional-actors in 41ms
+2022.05.09 22:26:31 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:26:31 INFO  time: compiled functional-actors in 0.17s
+2022.05.09 22:26:35 INFO  time: code lens generation in 2.01s
+2022.05.09 22:27:18 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:27:18 INFO  time: compiled functional-actors in 0.14s
+2022.05.09 22:29:43 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:29:43 INFO  time: compiled functional-actors in 0.14s
+2022.05.09 22:29:51 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:29:51 INFO  time: compiled functional-actors in 0.14s
+2022.05.09 22:29:56 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:29:56 INFO  time: compiled functional-actors in 0.14s
+2022.05.09 22:30:02 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:30:02 INFO  time: compiled functional-actors in 0.11s
+2022.05.09 22:30:06 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:30:06 INFO  time: compiled functional-actors in 0.11s
+2022.05.09 22:30:24 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:30:24 INFO  time: compiled functional-actors in 0.14s
+2022.05.09 22:31:21 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:31:21 INFO  time: compiled functional-actors in 0.15s
+2022.05.09 22:33:13 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:33:13 INFO  time: compiled functional-actors in 0.13s
+May 09, 2022 10:33:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1596
+something's wrong: no file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala in functional.actors.ActorRef[F,_CURSOR_]RangePosition(file:///C:/Users/scott/Documents/functional-actors/src/main/scala/functional/actors/mbmbm.scala, 741, 741, 762)
+2022.05.09 22:35:25 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:35:25 INFO  time: compiled functional-actors in 38ms
+2022.05.09 22:35:27 INFO  compiling functional-actors (1 scala source)
+2022.05.09 22:35:27 INFO  time: compiled functional-actors in 0.66s
+2022.05.09 22:41:27 INFO  shutting down Metals
+2022.05.09 22:41:27 INFO  Shut down connection with build server.
+2022.05.09 22:41:27 INFO  Shut down connection with build server.

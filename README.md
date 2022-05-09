@@ -11,17 +11,17 @@ sealed trait Command
 case class Ping[F[_]](sender: ActorRef[F, Command]) extends Command
 case object Pong extends Command
 
-def msgHandler[F[_]: Console]: Behaviour[F, Command].receive { (context, message) =>
+def msgHandler[F[_]: Sync: Console]: Behaviour[F, Command] = Behaviour.receive { (context, message) =>
   message match {
     case Pong =>
       for {
         _ <- Console[F].println("Pong")
       } yield ()
-    case Ping(sender) =>
+    case Ping(sender: ActorRef[F, Command]) =>
       for {
         _ <- Console[F].println("Ping")
         self <- context.self
-        _ <- sender ! Pong(self)
+        _ <- sender ! Pong
       } yield ()
   }
   msgHandler
@@ -31,7 +31,7 @@ val program = for {
   actorSystem <- ActorSystem[IO, Command](Behaviour.empty, "system")
   pinger <- actorSystem.spawn[Command](msgHandler, "pinger")
   ponger <- actorSystem.spawn[Command](msgHandler, "ponger")
-  pinger ! Ping(ponger)
+  _ <- pinger ! Ping(ponger)
   _ <- actorSystem.cancel
 } yield ()
 
@@ -39,6 +39,6 @@ val program = for {
 
 ## TODO
 
-1. Implement the ask pattern found in Akka.
-2. Implement support for communication between actors on different JVMs.
-3. Implement additional failure recovery of actors.
+* Implement the ask pattern found in Akka.
+* Implement support for communication between actors on different JVMs.
+* Implement additional failure recovery of actors.
