@@ -10,13 +10,17 @@ import cats.data._
 import cats.effect.implicits._
 import cats.implicits._
 
-class Actor[F[_]: Concurrent, T](actorContext: ActorContext[F, T], inputQueue: Queue[F, T], receiveLoop: Fiber[F, Throwable, Unit]) {
+class Actor[F[_]: Concurrent, T](actorContext: ActorContext[F, T], inputQueueResource: Resource[F, Queue[F, T]], receiveLoop: Fiber[F, Throwable, Unit]) {
 
-  def tell(msg: T): F[Unit] = inputQueue.offer(msg)
+  def tell(msg: T): F[Unit] = for {
+    _ <- Concurrent.pure[F]
+    _ = inputQueueResource.map(_.offer(msg))
+  } yield ()
 
   def cancel: F[Unit] = 
     for {
     _ <- receiveLoop.cancel
+    _ <- inputQueueResource.use(_ => Concurrent.pure[F])
     children <- actorContext.children
     _ <- children.traverse(_.cancel)
   } yield ()
@@ -24,7 +28,7 @@ class Actor[F[_]: Concurrent, T](actorContext: ActorContext[F, T], inputQueue: Q
 
 object Actor {
 
-  def apply[F[_]: Concurrent, T](actorContext: ActorContext[F, T], behaviour: Behaviour[F, T]): F[Actor[F, T]] = 
+  def apply[F[_]: Concurrent, T](actorContext: ActorContext[F, T], behaviour: Behaviour[F, T]): F[Actor[F, T]] = {
     for {
       inputQueue <- Queue.unbounded[F, T]
       behaviourRef <- Ref.of(behaviour)
@@ -34,5 +38,6 @@ object Actor {
         newBehaviour <- behaviour.receive(actorContext, message)
         _ <- behaviourRef.set(newBehaviour)
       } yield ()).foreverM[Unit].start
-    } yield new Actor[F, T](actorContext, inputQueue, receiveLoop)
+    } yield new Actor[F, T](actorContext, inputQueue.pure[F].toResource, receiveLoop)
+  }
 }
